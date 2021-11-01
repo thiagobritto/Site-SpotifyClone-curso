@@ -1,20 +1,21 @@
-
-html, body, .capa{
+html,
+body,
+.capa {
     height: 100%;
+    overflow: auto;
 }
 
-body{
-    background: url("imagens/capa.png"),
-                url("imagens/ruido.png"),
-                linear-gradient(50deg, #ff4169, #7c26f8);
+body {
+    background: url("imagens/capa.png"), url("imagens/ruido.png"), linear-gradient(50deg, #ff4169, #7c26f8);
     background-attachment: fixed;
     font-family: Helvetica, Arial, sans-serif;
     overflow-x: hidden;
 }
 
+
 /* Barra de navegaçao */
 
-.img-logo{
+.img-logo {
     height: 40px;
     width: 132px;
     display: block;
@@ -23,160 +24,197 @@ body{
     color: transparent;
 }
 
-nav.navbar-transparent{
+nav.navbar-transparent {
     opacity: 0.6;
     padding: 15px 0;
     border: none;
 }
 
-.navbar-brand{
+.navbar-brand {
     padding: 5px 15px;
 }
 
-.divisor{
+.divisor {
     width: 1px;
     height: 16px;
     background: #fff;
     margin: 18px 10px;
 }
 
-.navbar-inverse .navbar-nav>li>a, #rodape .nav a {
+.navbar-inverse .navbar-nav>li>a,
+#rodape .nav a {
     color: #fff;
 }
 
-.navbar-inverse .navbar-nav>li>a:focus, 
-.navbar-inverse .navbar-nav>li>a:hover, 
+.navbar-inverse .navbar-nav>li>a:focus,
+.navbar-inverse .navbar-nav>li>a:hover,
 #rodape .nav a:hover {
     color: #9bf0e1;
     background-color: transparent;
 }
 
+
 /* Capa */
 
-.capa{
+.capa {
     display: table;
     width: 100%;
 }
 
-.texto-capa{
+.texto-capa {
     text-align: center;
     color: #fff;
     display: table-cell;
     vertical-align: middle;
 }
 
+
 /* Botões */
 
-.btn-custom{
+.btn-custom {
     color: #fff;
     border-radius: 500px;
     -webkit-border-radius: 500px;
     -moz-border-radius: 500px;
-    padding: 10px 35px;
-    margin: 0 15px;
     text-transform: uppercase;
     transition: background 0.4s, color 0.4s;
 }
 
-.btn-roxo{
+.btn-roxo {
     background: #7c25f8;
 }
 
-.btn-roxo:hover{
+.btn-roxo:hover {
     background: #6207e3;
     color: #fff;
 }
 
-.btn-branco{
+.btn-branco {
     border: 2px solid #fff;
 }
 
-.btn-branco:hover{
+.btn-branco:hover {
     background: #fff;
     color: #000;
 }
 
+
 /* Serviços */
 
-#servicos{
+#servicos {
     background: #fff;
     padding-top: 20px;
     padding-bottom: 20px;
 }
 
-.albums-img{
+.albums-img {
     padding: 10px 0;
     border: none;
 }
 
+
 /* Recursos */
 
-#recursos{
+#recursos {
     padding-top: 20px;
     padding-bottom: 20px;
     color: #fff;
 }
 
-@media only screen and (max-width:991px){
-    .img-recursos{
+@media screen and (max-width:991px) {
+    .img-recursos {
         overflow: hidden;
     }
 }
 
-.rotacionar{
+.rotacionar {
     transform: rotate(30deg);
     -ms-transform: rotate(30deg);
     -webkit-transform: rotate(30deg);
     padding-left: 90px;
 }
 
+
 /* Rodapé */
-#rodape{
+
+#rodape {
     background: #000;
     padding: 50px 0px 20px 0px;
     position: relative;
 }
 
-.item-rede-social{
+.item-rede-social {
     display: flex;
     justify-content: space-evenly;
 }
 
+
 /* Tipografia */
 
-h1{
+h1 {
     font-size: 100px;
     font-weight: 900;
     letter-spacing: -0.05em;
     margin-bottom: 50px;
 }
 
-h2{
+@media screen and (max-width: 1200px) {
+    h1 {
+        font-size: 80px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    h1 {
+        font-size: 70px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    h1 {
+        font-size: 50px;
+    }
+    .btn-custom {
+        margin: 10px 15px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    h1 {
+        font-size: 50px;
+    }
+    .btn-custom {
+        margin: 10px 15px;
+    }
+}
+
+h2 {
     font-size: 50px;
     font-weight: 700;
     letter-spacing: -0.04em;
 }
 
-h3{
+h3 {
     font-size: 35px;
     font-weight: 700;
     letter-spacing: -0.04em;
 }
 
-#rodape h4{
+#rodape h4 {
     color: #919496;
     font-size: 12px;
     text-transform: uppercase;
 }
 
-#servicos h2, #servicos h3{
+#servicos h2,
+#servicos h3 {
     color: #7c25f8;
 }
 
-#recursos h3{
+#recursos h3 {
     color: #9bf0e1;
 }
 
-.border{
+.border {
     border: 1px solid red;
 }
